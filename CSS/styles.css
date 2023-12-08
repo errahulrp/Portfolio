@@ -1,0 +1,223 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Display', 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Navbar styles */
+nav {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    position: fixed;
+    width: 100%;
+    z-index: 2; /* Above other elements */
+}
+
+.nav-container {
+    padding: 20px 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #666;
+}
+
+/* Header section */
+.name-container {
+    padding: 80px 10% 40px; /* Adjusted padding */
+    text-align: center;
+}
+
+.name-container h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.name-container p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Portfolio section */
+.section {
+    padding: 80px 0; /* Adjusted padding */
+    text-align: center;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px; /* Spacing between sections */
+}
+
+.card {
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.card p.description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Services section */
+.services {
+    background-color: #f5f5f5;
+    padding: 80px 0; /* Adjusted padding */
+}
+
+.service-card {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #eee; /* Lighter border for separation */
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* About section */
+.about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Footer section */
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    max-height: 150px; /* Reduced footer height */
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+/* Add responsiveness for mobile devices */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .nav-links li {
+        margin: 0 10px; /* Example: Reduce margin */
+    }
+
+    .name-container {
+        padding: 60px 5% 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .name-container h2 {
+        font-size: 36px; /* Adjusted font size */
+        margin-bottom: 15px; /* Adjusted margin */
+    }
+
+    .name-container p {
+        font-size: 16px; /* Adjusted font size */
+        line-height: 1.5; /* Adjusted line height */
+    }
+
+    .portfolio-item {
+        margin-top: 20px; /* Adjusted margin */
+        justify-content: center; /* Center items */
+    }
+
+    .card {
+        width: 90%; /* Adjusted width for better spacing */
+        margin-bottom: 20px; /* Adjusted margin */
+    }
+
+    .card h3 {
+        font-size: 20px; /* Adjusted font size */
+        margin-top: 10px; /* Adjusted margin */
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: none; /* Adjusted max-width */
+        margin-bottom: 20px; /* Adjusted margin */
+    }
+
+    footer {
+        padding: 10px 0; /* Adjusted padding */
+    }
+
+    .social-links img {
+        width: 30px; /* Adjusted image size */
+        height: 30px; /* Adjusted image size */
+    }
+}

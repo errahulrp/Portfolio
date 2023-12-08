@@ -1,0 +1,79 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+button,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Pro Display', 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #333;
+}
+
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+/* Blog post styles */
+.blog-post {
+    margin: 50px auto;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure positioning context for the published date */
+}
+
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blog-header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.published-date {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.blog-content {
+    line-height: 1.6;
+}
+
+.blog-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blog-footer button,
+.blog-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Set the button to block level */
+    margin: 20px auto 0; /* Adjust margins to center the button */
+    width: 150px; /* Optional: Set a specific width for the button */
+}
+
+.blog-footer button:hover,
+.blog-content button:hover {
+    background-color: #666;
+}
+
+.blog-content a {
+    color: #333;
+    text-decoration: underline;
+}
